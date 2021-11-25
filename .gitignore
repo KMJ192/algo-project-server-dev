@@ -34,4 +34,9 @@ lerna-debug.log*
 !.vscode/launch.json
 !.vscode/extensions.json
 
+/wasm_module/Cargo.lock
+/wasm_module/target
+/wasm_module/pkg
 package-lock.json
+
+pkg
