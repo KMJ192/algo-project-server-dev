@@ -28,6 +28,14 @@
 <table>
   <tr>
     <td>Entity</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>User</td>
@@ -35,6 +43,7 @@
     <td>email</td>
     <td>pw</td>
     <td>nickname</td>
+    <td>userImage</td>
     <td>createDate</td>
     <td>updateDate</td>
     <td>isActivity</td>
