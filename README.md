@@ -17,6 +17,8 @@
   - auth
   - user info update
 - Live share
+  - 코드 작성 구역
+  - Channel Open
 - 알고리즘 / 소스코드 시각화
 - client로부터 입력받은 소스코드 시각화를 위한 코드 분석
   - 토큰화(각각 programming laguage별로 string tokenization)
@@ -52,8 +54,8 @@
 
 ### nest docs
 
-[nestjs]<https://docs.nestjs.kr/>
+<https://docs.nestjs.kr/>
 
 ### typeorm docs
 
-[typeorm]<https://typeorm.io/#/>
+<https://typeorm.io/#/>
