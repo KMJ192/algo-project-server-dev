@@ -19,7 +19,7 @@
 - Live share
 - 알고리즘 / 소스코드 시각화
 - client로부터 입력받은 소스코드 시각화를 위한 코드 분석
-  - 토큰화
+  - 토큰화(각각 programming laguage별로 string tokenization)
   - 구문분석
   - client에 분석내용 전달
 
@@ -28,13 +28,6 @@
 <table>
   <tr>
     <td>Entity</td>
-    <td>column</td>
-    <td>column</td>
-    <td>column</td>
-    <td>column</td>
-    <td>column</td>
-    <td>column</td>
-    <td>column</td>
   </tr>
   <tr>
     <td>User</td>
