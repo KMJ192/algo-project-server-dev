@@ -39,8 +39,8 @@
   </tr>
   <tr>
     <td>User</td>
-    <td>id</td>
-    <td>email</td>
+    <td>id (PrimaryGeneratedColumn)</td>
+    <td>email (Primary)</td>
     <td>pw</td>
     <td>nickname</td>
     <td>userImage</td>
@@ -49,3 +49,11 @@
     <td>isActivity</td>
   </tr>
 </table>
+
+### nest docs
+
+[nestjs]<https://docs.nestjs.kr/>
+
+### typeorm docs
+
+[typeorm]<https://typeorm.io/#/>
