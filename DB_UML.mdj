@@ -173,13 +173,28 @@
 													"top": 214,
 													"width": 255,
 													"height": 13
+												},
+												{
+													"_type": "ERDColumnView",
+													"_id": "AAAAAAF9XIgU5KXNuxE=",
+													"_parent": {
+														"$ref": "AAAAAAF9XH/uO6WDYh8="
+													},
+													"model": {
+														"$ref": "AAAAAAF9XIgU4KXKajM="
+													},
+													"font": "Arial;13;0",
+													"left": 157,
+													"top": 229,
+													"width": 255,
+													"height": 13
 												}
 											],
 											"font": "Arial;13;0",
 											"left": 152,
 											"top": 119,
 											"width": 265,
-											"height": 113
+											"height": 128
 										}
 									],
 									"font": "Arial;13;0",
@@ -265,6 +280,15 @@
 										"$ref": "AAAAAAF9XH/uOqV/QQ0="
 									},
 									"name": "isActivity",
+									"length": 0
+								},
+								{
+									"_type": "ERDColumn",
+									"_id": "AAAAAAF9XIgU4KXKajM=",
+									"_parent": {
+										"$ref": "AAAAAAF9XH/uOqV/QQ0="
+									},
+									"name": "userImage",
 									"length": 0
 								}
 							]
