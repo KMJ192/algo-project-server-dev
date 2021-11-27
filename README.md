@@ -15,6 +15,8 @@ yarn start:webpack
 - typeorm
 - WebSocket
 - webRTC
+- pm2
+- Docker
 
 ### 프로젝트 기능 구상
 
@@ -79,7 +81,7 @@ docker pull mongo
 docker images
 ```
 
-3. Create Mongo container and run Docker
+3. Create Mongo container and run Docker (this exam, set container name => mongodb-container)
 
 ```
 docker run --name mongodb-container -v ~/data:/data/db -d -p 27017:27017 mongo
