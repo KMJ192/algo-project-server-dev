@@ -9,19 +9,18 @@ async function bootstrap() {
   const port = 8080;
   const app = await NestFactory.create(AppModule);
 
-  app.use((res: Response, next: any) => {
-    if (isDisableKeepAlive === true) res.set('Connection', 'close');
-    next();
-  });
-
-  await app.listen(port, () => {
-    process.send('ready');
-  });
+  // app 준비 완료되면 ready send
+  await app.listen(port);
 
   // SICINT 신호를 받으면 응답 헤더에 Connection: close를 설정하여 Client Request 종료
   process.on('SIGINT', () => {
     isDisableKeepAlive = true;
     app.close();
+  });
+
+  app.use((res: Response, next: any) => {
+    if (isDisableKeepAlive === true) res.set('Connection', 'close');
+    next();
   });
 
   if (module.hot) {
