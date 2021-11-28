@@ -44,8 +44,6 @@ yarn build:all
 - webRTC
 - pm2
 - docker
-- webAssembly
-- rust
 
 ### Project skill plan
 
@@ -64,7 +62,7 @@ yarn build:all
   - Syntax analysis
   - Response the analysis results to client (json)
 
-### database
+### Database
 
 <table>
   <tr>
@@ -128,7 +126,7 @@ docker images
 3. Create Mongo container and run Docker (this exam, set container name => mongodb-container)
 
 ```
-docker run --name mongodb-container -v ~/data:/data/db -d -p 27017:27017 mongo
+docker run --name algo-project-mongodb -v ~/data:/data/db -d -p 27017:27017 mongo
 ```
 
 4. Check Docker container list
@@ -141,17 +139,37 @@ docker ps -a
 
 ```
 // start
-docker start mongodb-container
+docker start algo-project-mongodb
 
 // stop
-docker stop mongodb-container
+docker stop algo-project-mongodb
 
 // restart
-docker restart mongodb-container
+docker restart algo-project-mongodb
 ```
 
 6. Access to MongoDB Docker container
 
 ```
-docker exec -it mongodb-container bash
+docker exec -it algo-project-mongodb bash
+```
+
+### etc
+
+1. Confirm running docker image all
+
+```
+docker ps -a -s
+```
+
+2. Confirm docker images
+
+```
+docker images
+```
+
+3. Delete docker image
+
+```
+docker rmi <image id>
 ```
