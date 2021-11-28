@@ -87,13 +87,11 @@ yarn build:all
   </tr>
 </table>
 
-### nest docs
+### documents
 
-<https://docs.nestjs.kr/>
-
-### typeorm docs
-
-<https://typeorm.io/#/>
+<https://docs.nestjs.kr/> - nest
+<https://typeorm.io/#/> - typeorm
+<https://pm2.keymetrics.io/docs/usage/quick-start/> - pm2
 
 ### MongoDB Docker
 
