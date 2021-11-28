@@ -1,13 +1,40 @@
 # Algorithm study server
 
-### run in local
+### Run application
+
+- npm run
 
 ```
-npm start:webpack
 yarn start:webpack
 ```
 
-### dev stack
+- pm2 run
+
+```
+yarn start:pm2
+```
+
+### Build application
+
+- wasm build
+
+```
+wasm-pack build wasm_module
+```
+
+- nest build
+
+```
+yarn build
+```
+
+- all build
+
+```
+yarn build:all
+```
+
+### Dev stack
 
 - nsetjs
 - typescript
@@ -18,7 +45,7 @@ yarn start:webpack
 - pm2
 - Docker
 
-### 프로젝트 기능 구상
+### Project skill plan
 
 - User
   - sign up
@@ -26,13 +53,14 @@ yarn start:webpack
   - auth
   - user info update
 - Live share
-  - 코드 작성 구역
+  - Code writing area
   - Channel Open
-- 알고리즘 / 소스코드 시각화
-- client로부터 입력받은 소스코드 시각화를 위한 코드 분석
-  - 토큰화(각각 programming laguage별로 string tokenization)
-  - 구문분석
-  - client에 분석내용 전달
+  - Chat room
+- algorithm / Data structure visualization
+- Code analysis for visualization from client's request
+  - Tokenization (Each programming laguage, Algorithm for String tokenization)
+  - Syntax analysis
+  - Response the analysis results to client (json)
 
 ### database
 
