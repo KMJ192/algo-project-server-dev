@@ -4,8 +4,11 @@
     "project": "tsconfig.json",
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint/eslint-plugin"],
-  "extends": ["prettier", "plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"],
+  "plugins": ["@typescript-eslint/eslint-plugin", "prettier"],
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
   "root": true,
   "env": {
     "node": true,
@@ -13,6 +16,8 @@
   },
   "ignorePatterns": [".eslintrc"],
   "rules": {
+    // prettier 설정
+    "prettier/prettier": "error",
     // import
     "import/no-dynamic-require": 0,
     "import/no-unresolved": 0,
