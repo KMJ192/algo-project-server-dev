@@ -40,5 +40,6 @@ lerna-debug.log*
 package-lock.json
 yarn-lock.json
 
-pkg
+/pkg
 /src/mongodb/key.ts
+*.pem
