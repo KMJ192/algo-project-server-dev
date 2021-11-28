@@ -40,7 +40,7 @@ yarn build:all
 - typescript
 - mongodb
 - typeorm
-- WebSocket
+- webSocket
 - webRTC
 - pm2
 - Docker
