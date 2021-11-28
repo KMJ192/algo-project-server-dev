@@ -89,9 +89,9 @@ yarn build:all
 
 ### documents
 
-<https://docs.nestjs.kr/> - nest
-<https://typeorm.io/#/> - typeorm
-<https://pm2.keymetrics.io/docs/usage/quick-start/> - pm2
+- <https://docs.nestjs.kr/> - nest
+- <https://typeorm.io/> - typeorm
+- <https://pm2.keymetrics.io/docs/usage/quick-start/> - pm2
 
 ### MongoDB Docker
 
