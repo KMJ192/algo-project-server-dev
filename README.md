@@ -36,14 +36,16 @@ yarn build:all
 
 ### Dev stack
 
-- nsetjs
+- nestjs
 - typescript
 - mongodb
 - typeorm
 - webSocket
 - webRTC
 - pm2
-- Docker
+- docker
+- webAssembly
+- rust
 
 ### Project skill plan
 
@@ -93,7 +95,23 @@ yarn build:all
 - <https://typeorm.io/> - typeorm
 - <https://pm2.keymetrics.io/docs/usage/quick-start/> - pm2
 
-### MongoDB Docker
+### Project docker
+
+1. build
+
+```
+docker build -t <tag-name> .
+```
+
+2. start
+
+```
+docker run --rm -d -p port:port <tag-name>
+```
+
+3. Checking the running docker image
+
+### MongoDB docker
 
 1. Download MongoDB Docker image
 
@@ -132,7 +150,7 @@ docker stop mongodb-container
 docker restart mongodb-container
 ```
 
-6. eccess to MongoDB Docker container
+6. Access to MongoDB Docker container
 
 ```
 docker exec -it mongodb-container bash
