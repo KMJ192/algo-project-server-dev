@@ -38,3 +38,4 @@ lerna-debug.log*
 /src/mongodb/key.ts
 *.pem
 .dbdata
+package-lock.json
