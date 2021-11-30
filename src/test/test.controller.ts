@@ -3,12 +3,9 @@ import { Response } from 'express';
 
 @Controller()
 export class TestController {
-  @Get('wasm-test')
+  @Get('test')
   async test(@Res() response: Response) {
-    import('@wasm').then((module) => {
-      const tmp = module.test();
-      response.send(tmp);
-      console.log(tmp);
-    });
+    response.send('test');
+    console.log('test');
   }
 }
