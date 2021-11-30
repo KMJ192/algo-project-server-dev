@@ -6,7 +6,6 @@ module.exports = function (options, webpack) {
   options.resolve.extensions.push('.wasm');
   options.resolve.alias = {
     '@src': path.resolve(__dirname, 'src'),
-    '@wasm': path.resolve(__dirname, 'wasm_module/pkg'),
   };
 
   return {
