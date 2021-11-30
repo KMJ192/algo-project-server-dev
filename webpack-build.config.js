@@ -3,7 +3,6 @@ const nodeExternals = require('webpack-node-externals');
 const { RunScriptWebpackPlugin } = require('run-script-webpack-plugin');
 
 module.exports = function (options, webpack) {
-  options.resolve.extensions.push('.wasm');
   options.resolve.alias = {
     '@src': path.resolve(__dirname, 'src'),
   };
