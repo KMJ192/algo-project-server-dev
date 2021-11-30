@@ -39,7 +39,6 @@ yarn build:all
 - nestjs
 - typescript
 - mongodb
-- typeorm
 - webSocket
 - webRTC
 - pm2
@@ -98,13 +97,13 @@ yarn build:all
 1. build
 
 ```
-docker build -t <tag-name> .
+docker build -t algo-server-dev .
 ```
 
 2. start
 
 ```
-docker run --rm -d -p port:port <tag-name>
+docker run --rm -d -p port:port algo-server-dev
 ```
 
 3. Checking the running docker image
@@ -172,4 +171,81 @@ docker images
 
 ```
 docker rmi <image id>
+```
+
+### docker-compose
+
+1. Run docker-compose on background
+
+```
+docker-compose ps -d
+```
+
+<table>
+  <tr>
+    <td>Option</td>
+    <td>Function</td>
+  </tr>
+  <tr>
+    <td>-d</td>
+    <td>Run on background</td>
+  </tr>
+  <tr>
+    <td>--no-deps</td>
+    <td>Don't run link service</td>
+  </tr>
+  <tr>
+    <td>--build</td>
+    <td>Build image</td>
+  </tr>
+  <tr>
+    <td>--t</td>
+    <td>Setting timeout (default 10s)</td>
+  </tr>
+</table>
+
+2. Confirm running container
+
+```
+docker-compose ps
+```
+
+3. Display containers logs
+
+```
+docker-compose logs
+```
+
+4. Run specific order to run container
+
+```
+docker-compose run <service name> <option>
+```
+
+5. start/stop/pause/unpause/restart specific service or services
+
+```
+docker-compose start <service name>
+docker-compose stop <service name>
+docker-compose pause <service name>
+docker-compose unpause <service name>
+docker-compose restart <service name>
+```
+
+6. Remove created container all-togather
+
+```
+docker-compose rm
+```
+
+7. Compulsion stop fo running conainer
+
+```
+docker-compose kill
+```
+
+8. Confirm service's info
+
+```
+docker-compose port
 ```
