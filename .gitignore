@@ -34,12 +34,7 @@ lerna-debug.log*
 !.vscode/launch.json
 !.vscode/extensions.json
 
-/wasm_module/Cargo.lock
-/wasm_module/target
-/wasm_module/pkg
-package-lock.json
-yarn-lock.json
-
 /pkg
 /src/mongodb/key.ts
 *.pem
+.dbdata
