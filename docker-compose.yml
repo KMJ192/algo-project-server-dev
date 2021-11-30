@@ -1,5 +1,25 @@
+# docker compose version
 version: '3.9'
-services:
-  backend:
 
-  db:
+# container declare inside service
+services:
+  algo-project-server-dev:
+    build: .
+    ports:
+      - 8080:8080 # local port:container port
+    volumes:
+      - .:/app
+    depends_on:
+      - mongodb
+  mongodb:
+    image: mongo
+    container_name: 'algo-project-mongodb'
+    restart: always
+    ports:
+      - '${MONGODB_PORT}:${MONGODB_PORT}'
+    environment:
+      MONGO_INITDB_ROOT_DATABASE: ${DATABASE_NAME}
+      MONGO_INITDB_ROOT_USERNAME: ${DATABASE_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${DATABASE_PASSWORD}
+    volumes:
+      - .dbdata:/val/lib/mongodb

@@ -43,6 +43,8 @@ yarn build:all
 - webRTC
 - pm2
 - docker
+- nginx
+- aws ec2
 
 ### Project skill plan
 
@@ -92,7 +94,7 @@ yarn build:all
 - <https://typeorm.io/> - typeorm
 - <https://pm2.keymetrics.io/docs/usage/quick-start/> - pm2
 
-### Project docker
+### Project dockerfile
 
 1. build
 
@@ -173,13 +175,9 @@ docker images
 docker rmi <image id>
 ```
 
-### docker-compose
+### Project docker-compose.yml
 
 1. Run docker-compose on background
-
-```
-docker-compose ps -d
-```
 
 <table>
   <tr>
@@ -203,6 +201,9 @@ docker-compose ps -d
     <td>Setting timeout (default 10s)</td>
   </tr>
 </table>
+```
+docker-compose up -d
+```
 
 2. Confirm running container
 
