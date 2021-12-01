@@ -16,12 +16,6 @@ yarn start:pm2
 
 ### Build application
 
-- wasm build
-
-```
-wasm-pack build wasm_module
-```
-
 - nest build
 
 ```
