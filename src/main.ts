@@ -6,7 +6,7 @@ declare const module: any;
 
 async function bootstrap() {
   let isDisableKeepAlive = false;
-  const port = 8080;
+  const port = 3000;
   const app = await NestFactory.create(AppModule);
 
   // app 준비 완료되면 ready send
