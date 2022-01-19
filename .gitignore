@@ -39,3 +39,4 @@ lerna-debug.log*
 *.pem
 .dbdata
 package-lock.json
+.env

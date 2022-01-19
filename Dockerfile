@@ -1,5 +1,5 @@
 # node version 설정
-FROM node:15.5
+FROM node:16.13.1
 
 # package 복사
 COPY package.json .
@@ -16,7 +16,7 @@ RUN npm install -g pm2
 # docker container의 timezone을 서울로 변경
 ENV TZ=Asia/Seoul
 
-RUN npm build
+RUN npm run build
 
 # application 실행
 # CMD npm run start:webpack

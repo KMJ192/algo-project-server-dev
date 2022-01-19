@@ -6,20 +6,19 @@ services:
   server:
     build: .
     ports:
-      - 3000:3000 # local port:container port
+      - ${PORT}:${PORT} # local port:container port
     volumes:
       - .:/app
     depends_on:
-      - mongodb
-  mongodb:
-    image: mongo
-    container_name: 'algo-project-mongodb'
+      - database
+  database:
+    image: mysql
     restart: always
     ports:
-      - '${MONGODB_PORT}:${MONGODB_PORT}'
+      - ${DATABASE_PORT}:${DATABASE_PORT}
     environment:
-      MONGO_INITDB_ROOT_DATABASE: ${DATABASE_NAME}
-      MONGO_INITDB_ROOT_USERNAME: ${DATABASE_USERNAME}
-      MONGO_INITDB_ROOT_PASSWORD: ${DATABASE_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
     volumes:
-      - .dbdata:/val/lib/mongodb
+      - .dbdata:/var/lib/mysql
