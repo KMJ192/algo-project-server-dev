@@ -106,3 +106,18 @@ docker run --rm -d -p port:port algo-server-dev
 ```
 docker images
 ```
+
+### mysql 접속
+
+1. database bash 접근
+
+```
+docker exec -it algo-project-server-dev_database_1 bash
+```
+
+2. 로그인
+
+```
+mysql -u <계정명> -p
+password 입력
+```
