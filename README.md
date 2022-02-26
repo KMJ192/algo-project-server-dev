@@ -121,3 +121,5 @@ docker exec -it algo-project-server-dev_database_1 bash
 mysql -u <계정명> -p
 password 입력
 ```
+
+3.
