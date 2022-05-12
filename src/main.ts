@@ -4,13 +4,15 @@ import { Response } from 'express';
 
 declare const module: any;
 
+const PORT = 8080;
+
 async function bootstrap() {
   let isDisableKeepAlive = false;
-  const port = 3000;
+
   const app = await NestFactory.create(AppModule);
 
   // app 준비 완료되면 ready send
-  await app.listen(port);
+  await app.listen(PORT);
 
   // SICINT 신호를 받으면 응답 헤더에 Connection: close를 설정하여 Client Request 종료
   process.on('SIGINT', () => {
