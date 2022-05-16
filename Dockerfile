@@ -1,5 +1,5 @@
 # node version 설정
-FROM node:16.13.1
+FROM node:16.14.2
 
 # package 복사
 COPY package.json .
