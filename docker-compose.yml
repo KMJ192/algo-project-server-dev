@@ -12,6 +12,7 @@ services:
     depends_on:
       - database
   database:
+    platform: ${PLATFORM}
     image: mysql
     restart: always
     ports:
