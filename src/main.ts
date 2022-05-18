@@ -4,7 +4,7 @@ import { Response } from 'express';
 
 declare const module: any;
 
-const PORT = 8080;
+const PORT = 3000;
 
 async function bootstrap() {
   let isDisableKeepAlive = false;
