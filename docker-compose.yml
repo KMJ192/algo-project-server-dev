@@ -12,8 +12,8 @@ services:
     depends_on:
       - database
   database:
+    image: mysql/mysql-server:5.7.28
     platform: ${PLATFORM}
-    image: mysql
     restart: always
     ports:
       - ${HOST_DATABASE_PORT}:${DATABASE_PORT}

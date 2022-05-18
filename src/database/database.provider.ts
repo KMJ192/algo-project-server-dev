@@ -7,7 +7,7 @@ export const databaseProviders = [
       await createConnection({
         type: 'mysql',
         host: 'localhost',
-        port: 3306,
+        port: 3307,
         username: 'root',
         password: 'root',
         database: 'TEST_DB',
