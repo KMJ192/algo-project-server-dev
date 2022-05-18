@@ -12,7 +12,7 @@ services:
     depends_on:
       - database
   database:
-    image: mysql/mysql-server:5.7.28
+    image: mysql/mysql-server
     platform: ${PLATFORM}
     restart: always
     ports:
