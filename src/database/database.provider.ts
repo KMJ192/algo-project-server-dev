@@ -6,11 +6,13 @@ export const databaseProviders = [
     useFactory: async () =>
       await createConnection({
         type: 'mysql',
-        host: 'localhost',
-        port: 3307,
+        host: '172.26.0.2', // mysql docker ip
+        // host: 'localhost',
+        port: 3306,
         username: 'root',
         password: 'root',
         database: 'TEST_DB',
+        entities: [],
         synchronize: true,
       }),
   },

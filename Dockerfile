@@ -22,5 +22,5 @@ RUN npm run build
 # CMD npm run start:webpack
 CMD ["pm2-runtime", "start", "ecosystem.config.js"]
 
-# 3000포트 사용
+# 포트 사용
 EXPOSE 3000
