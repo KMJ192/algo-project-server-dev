@@ -23,4 +23,4 @@ RUN npm run build
 CMD ["pm2-runtime", "start", "ecosystem.config.js"]
 
 # 포트 사용
-EXPOSE 3000
+EXPOSE 8080
